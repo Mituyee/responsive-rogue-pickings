@@ -12,15 +12,6 @@ body {
 
 /* The width property has been changed to max-width */
 
-header
-.top-section .bottom-section
-footer
-
-{
-	display: flex;
-	justify-content: center;
-	
-}
 .content-wrapper {
 	display: flex;
 	justify-content: center;
@@ -57,7 +48,10 @@ h4 {
 }
 
 p {
-	line-height: 1.6rem;
+	font-size: 1rem;
+	line-height: 36px;
+
+
 }
 
 /******** HEADER STYLES ********/
@@ -84,13 +78,15 @@ header nav {
 }
 
 header nav ul {
+	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
 
 header nav ul li {
 	width: 100%;
-	font-size: 14px;
+	font-size: .875rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	list-style: none;
@@ -121,10 +117,9 @@ header nav ul li a {
 /******** BOTTOM SECTION ********/
 .top-section,
 .bottom-section {
-	width: 90%;
 	display: flex;
 	justify-content: center;
-	flex-flow: row wrap;
+	
 
 }
 
@@ -136,9 +131,7 @@ header nav ul li a {
 .section-one,
 .section-two,
 .section-three {
-	width: 100%;
-	
-	
+	box-sizing: border-box;
 }
 
 .section-one {
@@ -184,5 +177,5 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #45610E;
-	font-size: 14px;
+	font-size: .875rem;
 }
